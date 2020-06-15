@@ -9,22 +9,25 @@ int main(void){
 	cin.tie(0);
 	ios::sync_with_stdio(false);
 
-	int answer=0;
+	int N;
 	int i,j;
 	int tmp;
+	int answer=0;
 	int counter=0;
 	vector<int> given;
 
-	for(i=0;i<5;i++){
+	cin >> N;
+
+	for(i=0;i<N;i++){
 		cin >> tmp;
 		given.push_back(tmp);
 	}
-	
-	for(i=0;i<5;i++){
-		if(given[i]==0){
-			cout << i+1 << endl;
-			return 0;
-		}
-	}
-}
 
+	//sort(given.begin(),given.end());
+	//sort(given.begin(),given.end(),greater<int>());
+	
+	answer=0;
+	cout << answer << endl;
+
+	return 0;
+}

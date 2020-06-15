@@ -11,9 +11,9 @@ CPPFLAGS := -Wall
 		cat ./tmp ;\
 		diff -q tmp ./testcase/$@/$$case-ans > /dev/null ;\
 		if [ $$? -eq 0 ]; then\
-			echo ">>>\e[42;30mOK.\e[m\n" ;\
+			echo ">>>\e[42;30mOK.\e[m" ;\
 		else\
-			echo ">>>\e[41;30merror.\e[m\n" ;\
+			echo ">>>\e[41;30merror.\e[m" ;\
 		fi;\
 	done;\
 	rm -f tmp

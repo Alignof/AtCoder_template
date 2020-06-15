@@ -9,25 +9,25 @@ int main(void){
 	cin.tie(0);
 	ios::sync_with_stdio(false);
 
-	int X,Y;
+	int N;
 	int i,j;
 	int tmp;
 	int answer=0;
 	int counter=0;
 	vector<int> given;
 
-	cin >> X >> Y;
+	cin >> N;
 
-	for(i=0;i<=100;i++){
-		for(j=0;j<=100;j++){
-			if(2*i+4*j==Y && i+j==X){
-				cout << "Yes" << endl;
-				return 0;
-			}
-		}
+	for(i=0;i<N;i++){
+		cin >> tmp;
+		given.push_back(tmp);
 	}
 
-	cout << "No" << endl;
+	//sort(given.begin(),given.end());
+	//sort(given.begin(),given.end(),greater<int>());
+	
+	answer=0;
+	cout << answer << endl;
 
 	return 0;
 }
