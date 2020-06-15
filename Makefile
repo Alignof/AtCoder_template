@@ -17,3 +17,25 @@ CPPFLAGS := -Wall
 		fi;\
 	done;\
 	rm -f tmp
+
+A.cpp :
+	g++ -o output A.cpp
+
+B.cpp :
+	g++ -o output B.cpp
+
+C.cpp :
+	g++ -o output C.cpp
+
+D.cpp :
+	g++ -o output D.cpp
+
+E.cpp :
+	g++ -o output E.cpp
+
+F.cpp :
+	g++ -o output F.cpp
+
+
+.PHONY : A.cpp B.cpp C.cpp D.cpp E.cpp F.cpp
+
