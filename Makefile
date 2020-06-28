@@ -13,7 +13,7 @@ CPPFLAGS := -Wall
 		if [ $$? -eq 0 ]; then\
 			echo ">>>\e[42;30mOK.\e[m" ;\
 		else\
-			echo "------------\e[43;30mexpext\e[m---------------" ;\
+			echo "------------\e[43;30mexpect\e[m---------------" ;\
 			cat ./testcase/$@/$$case-ans ;\
 			echo ">>>\e[41;30merror.\e[m" ;\
 		fi;\

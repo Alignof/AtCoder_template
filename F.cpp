@@ -1,9 +1,8 @@
 #include <bits/stdc++.h>
-#define SIZE 10
 #define PI 3.141592653589793
-
+#define rep(i,n) for (int i=0;i<(n);i++)
 using namespace std;
-typedef long long ll;
+using ll = long long;
 
 int main(void){
 	cin.tie(0);
@@ -11,23 +10,19 @@ int main(void){
 
 	int N;
 	int i,j;
-	int tmp;
-	int answer=0;
-	int counter=0;
-	vector<int> given;
+	int ans=0;
+	int ctr=0;
 
 	cin >> N;
 
-	for(i=0;i<N;i++){
-		cin >> tmp;
-		given.push_back(tmp);
-	}
+	vector<int> gv(N);
+	rep(i,N) cin >> gv[i];
 
-	//sort(given.begin(),given.end());
-	//sort(given.begin(),given.end(),greater<int>());
+	//sort(gv.begin(),gv.end());
+	//sort(gv.begin(),gv.end(),greater<int>());
 	
-	answer=0;
-	cout << answer << endl;
+	ans=0;
+	cout << ans << endl;
 
 	return 0;
 }
