@@ -20,7 +20,7 @@ CPPFLAGS := -Wall
 	done;\
 	rm -f tmp
 
-debug_%:%.cpp
+xx%:%.cpp
 	g++ -o output $<
 	./output
 

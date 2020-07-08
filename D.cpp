@@ -9,7 +9,7 @@ int main(void){
 	ios::sync_with_stdio(false);
 
 	int N;
-	int i,j;
+	int i,k;
 	int ans=0;
 	int ctr=0;
 
