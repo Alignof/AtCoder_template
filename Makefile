@@ -20,9 +20,12 @@ CPPFLAGS := -Wall
 	done;\
 	rm -f tmp
 
-xx%:%.cpp
-	g++ -o output $<
-	./output
+%xx:%.cpp
+	g++ -o $@ $<
+	./$@
 
-.PHONY : A.cpp B.cpp C.cpp D.cpp E.cpp F.cpp
+clean:
+	rm -f output a.out *xx
+
+.PHONY : A.cpp B.cpp C.cpp D.cpp E.cpp F.cpp clean
 
